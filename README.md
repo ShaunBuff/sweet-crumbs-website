@@ -74,6 +74,14 @@ Parts 2 and 3 (styling, interactivity, backend integration) will follow in subse
 | Date       | Version | Description                                  |
 |------------|---------|----------------------------------------------|
 | 2025-08-26 | 0.1     | Initial multi-page website created and tested locally.|
+| 2025-09-26 | 0.2     | Added images to the menu page and updated HTML structure. |
+| Date       | Version | Description                                                               
+| 2025-08-26 | 0.1     | Initial multi-page website created and tested locally.                                                                                                                |
+| 2025-09-26 | 0.2     | Added images to menu items; fixed menu layout; tested responsive behavior.                                                                                            |
+| 2025-09-26 | 0.3     | Created external `styles.css` and linked all HTML pages; established base styles and typography.                                                                      |
+| 2025-09-26 | 0.4     | Applied visual styles for header, nav, main content, menu grid, and footer.                                                                                           |
+| 2025-09-26 | 0.5     | Implemented responsive design with breakpoints for desktop, tablet, and mobile; applied relative units and responsive images.                                         |
+| 2025-09-26 | 0.6     | Created fully responsive HTML pages: Home, Menu, About Us, Order, Custom Cakes, Contact; ensured multi-column layout for desktop and single-column layout for mobile. |
 
 ---
 
@@ -85,4 +93,4 @@ Parts 2 and 3 (styling, interactivity, backend integration) will follow in subse
 
 ---
 
-*For any questions, contact .* orders@sweetcrumbs.co.za
+*For any questions, contact :* info@sweetcrumbs.co.za

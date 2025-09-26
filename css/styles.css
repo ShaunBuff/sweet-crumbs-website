@@ -1,0 +1,180 @@
+/* ========================
+   1. Base / Global Styles
+======================== */
+
+/* Reset default margins, paddings, box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body base style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;          /* relative unit */
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff0f5;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #f080a0;
+}
+
+a:hover {
+    color: #d94f9c;
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    list-style: none;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+/* Images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2);
+}
+
+/* ========================
+   2. Typography Styles
+======================== */
+h1 {
+    font-size: 2.5rem;
+    color: #d94f9c;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #d94f9c;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #f080a0;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.menu-list li strong {
+    font-size: 1.2rem;
+    color: #d94f9c;
+}
+
+/* ========================
+   3. Layout Structure
+======================== */
+header {
+    background-color: #f8c8dc;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f3a6c0;
+    padding: 0.625rem 0;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 0.3125rem 0.625rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f080a0;
+    border-radius: 0.3125rem;
+}
+
+main {
+    max-width: 62.5rem; /* ~1000px */
+    margin: 1.25rem auto;
+    padding: 0 0.9375rem;
+}
+
+/* Menu grid layout */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); /* flexible grid */
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.menu-list li {
+    background-color: #fff0f5;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f8c8dc;
+    padding: 0.9375rem;
+    margin-top: 1.875rem;
+}
+
+/* ========================
+   4. Responsive / Breakpoints
+======================== */
+
+/* Tablet: 768px – 1023px */
+@media (max-width: 63.9375rem) and (min-width: 48rem) { /* 1023px and 768px in rem */
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    .menu-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        gap: 0.75rem;
+    }
+}
+
+/* Mobile: ≤ 767px */
+@media (max-width: 47.9375rem) { /* 767px */
+    h1 { font-size: 1.875rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.125rem; }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+
+    .menu-list {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 0 0.625rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0.625rem;
+    }
+}

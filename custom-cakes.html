@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Crumbs | Custom Cakes</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Sweet Crumbs Bakery</h1>
+        <h1>Custom Cakes</h1>
     </header>
 
     <nav>
@@ -23,19 +24,21 @@
     </nav>
 
     <main>
-        <h2>Request a Custom Cake</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+        <h2>Design Your Cake</h2>
+        <p>Fill out the form below to request a custom cake for your special occasion. We'll contact you to confirm details.</p>
 
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-            <label for="date">Pickup Date:</label><br />
-            <input type="date" id="date" name="date" required /><br /><br />
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Describe Your Cake:</label><br />
-            <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+            <label for="cake-type">Cake Type:</label><br>
+            <input type="text" id="cake-type" name="cake-type" required><br><br>
+
+            <label for="message">Additional Details:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
             <button type="submit">Submit Request</button>
         </form>
